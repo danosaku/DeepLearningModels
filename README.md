@@ -6,7 +6,7 @@
  You just need to implement a code to load your dataset and modify some lines of code such as, number of classes, number of batches, number of epochs.
  
  
- #ALexNet
+ #AlexNet
  
  I modify the implementation of https://github.com/heuritech/convnets-keras to finetune in your dataset.
  
