@@ -32,16 +32,17 @@ Make sure you have the following libraries installed.
 - Once the dataset and weights are in order, run the following script in terminal:
 
 For run in CPU:
+```
 python finetune.py
-
+```
 and for run in GPU:
-
- THEANO_FLAGS=device=cuda,floatX=float32  python finetune.py 
-
+```
+THEANO_FLAGS=device=cuda,floatX=float32  python finetune.py 
+```
 If you want to choose the GPU number 2, replace cuda for cuda2, for instance.
 
 Warning: If you use Imagenet pretrained models, you need subtract the mean of each image channel obained from imagenet dataset, like:
-
+```
 ### For Tensorflow 
 #### Switch RGB to BGR order 
 x = x[:, :, :, ::-1]  
@@ -59,7 +60,7 @@ x = x[:, ::-1, :, :]
 x[:, 0, :, :] -= 103.939
 x[:, 1, :, :] -= 116.779
 x[:, 2, :, :] -= 123.68
-
+```
 
 
 ## TO-DO
