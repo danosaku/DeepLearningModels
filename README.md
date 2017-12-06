@@ -11,17 +11,9 @@
  Theano
  
  
- #AlexNet
+ ## AlexNet
  
- I modify the implementation of https://github.com/heuritech/convnets-keras to finetune in your dataset.
- 
- Usage:
- Using cpu
- python finetune.py 
- 
- Using gpu
- THEANO_FLAGS=device=cuda2,floatX=float32  python finetune.py
- 
+ I modified the implementation of https://github.com/heuritech/convnets-keras to finetune in your dataset.
 
  
  
