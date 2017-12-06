@@ -43,20 +43,20 @@ If you want to choose the GPU number 2, replace cuda for cuda2, for instance.
 
 Warning: If you use Imagenet pretrained models, you need subtract the mean of each image channel obained from imagenet dataset, like:
 
-# For Tensorflow 
-# Switch RGB to BGR order 
+### For Tensorflow 
+#### Switch RGB to BGR order 
 x = x[:, :, :, ::-1]  
 
-# Subtract ImageNet mean pixel 
+#### Subtract ImageNet mean pixel 
 x[:, :, :, 0] -= 103.939
 x[:, :, :, 1] -= 116.779
 x[:, :, :, 2] -= 123.68
 
-# For Theano
-# Switch RGB to BGR order 
+### For Theano
+##### Switch RGB to BGR order 
 x = x[:, ::-1, :, :]
 
-# Subtract ImageNet mean pixel 
+##### Subtract ImageNet mean pixel 
 x[:, 0, :, :] -= 103.939
 x[:, 1, :, :] -= 116.779
 x[:, 2, :, :] -= 123.68
