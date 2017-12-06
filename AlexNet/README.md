@@ -4,10 +4,8 @@ A blog post accompanying this project can be found [here](https://rahulduggal260
 ## Contents
 1. [Motivation](#motivation)
 2. [Requirements](#requirements)
-3. [Experiments](#experiments)
-4. [Results](#results)
-5. [TO-DO](#to-do)
-8. [License](#license)
+3. [TO-DO](#to-do)
+4. [License](#license)
 
 ## Motivation
 When I first started exploring deep learning (DL) in July 2016, many of the papers I read established their baseline performance using the standard AlexNet model. In part, this could be attributed to the several code examples readily available across all major Deep Learning libraries. Despite its significance, I could not find readily available code examples for training AlexNet in the Keras framework. Through this project, I am sharing my experience of training AlexNet in three very useful scenarios :-
