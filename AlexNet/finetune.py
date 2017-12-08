@@ -365,6 +365,6 @@ if __name__ == "__main__":
     Y_test = np.argmax(Y_valid, axis=-1) # Convert one-hot to index
     Y_pred = np.argmax(predictions_valid, axis=-1)
     #y_pred = model.predict_classes(X_valid)
-    print(classification_report(Y_test, Y_pred, target_names=target_names))
+    #print(classification_report(Y_test, Y_pred, target_names=target_names))
 
 
