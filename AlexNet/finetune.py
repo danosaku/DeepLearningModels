@@ -360,7 +360,7 @@ if __name__ == "__main__":
 
     # Cross-entropy loss score
     score = log_loss(Y_valid, predictions_valid)
-    target_names = Generate_train_test2.load_target_names()
+    #target_names = Generate_train_test2.load_target_names()
     #print Y_valid, predictions_valid
     Y_test = np.argmax(Y_valid, axis=-1) # Convert one-hot to index
     Y_pred = np.argmax(predictions_valid, axis=-1)
