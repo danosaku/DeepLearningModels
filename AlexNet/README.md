@@ -64,8 +64,9 @@ x[:, 2, :, :] -= 123.68
 
 
 ## TO-DO
-1. The mean subtraction layer (look inside Code/alexnet_base.py) currently uses a theano function - set_subtensor. This introduces a dependancy to install Theano. I would ideally like to use a keras wrapper function which works for both Theano and Tensorflow backends. I'm not sure if such a wrapper exists though. Any suggestions for the corresponding Tensorflow function, so that I could write the Keras wrapper myself?
-2. Use this code to demonstrate performance on a dataset that is significantly different from ImageNet. Maybe a medical imaging dataset?
+1. Use this code to demonstrate performance on a dataset that is significantly different from ImageNet. Maybe a medical imaging dataset?
+2. Create one dataset just to demonstrate how you can perform the classification in your own dataset.
+
 
 ## License
 This code is released under the MIT License (refer to the LICENSE file for details).
