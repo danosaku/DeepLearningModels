@@ -18,7 +18,7 @@
  
 ## Caffenet
 
-I modified the implementation of to finetune in your dataset.
+I modified the implementation of https://github.com/yjn870/keras-caffenet to finetune in your dataset.
 
 
 
