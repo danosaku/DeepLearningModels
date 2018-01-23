@@ -16,4 +16,13 @@
  I modified the implementation of https://github.com/heuritech/convnets-keras to finetune in your dataset.
 
  
- 
+## Caffenet
+
+I modified the implementation of to finetune in your dataset.
+
+
+
+
+## TO DO
+
+ - Provide an example to show how to use the models in your dataset. I can not post the dataset bacause it is not available to be used yet.
