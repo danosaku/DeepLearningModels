@@ -6,12 +6,6 @@ import Generate_dataset_Protozoan
 ##base de Larvae
 import Generate_dataset_Larvae
 from datetime import datetime
-train_size = 0.05
-train_file = "eggs_train.txt"
-test_file = "eggs_test.txt"
-pretrain = True  
-# Base: {Larvae, Eggs, Protozoan}
-base = "Eggs"
 
 def Load():
 
@@ -19,13 +13,7 @@ def Load():
   batch_size = 16 
   nb_epoch = 10
 
-  if base=="Eggs":
-    num_classes=9
-  else:
-    if base=="Protozoan":
-      num_classes=7
-    else:
-      num_classes=2
+  num_classes = 10 #for cifar10
 
   return batch_size, nb_epoch, num_classes, save_weights
 
