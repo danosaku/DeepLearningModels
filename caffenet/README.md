@@ -21,12 +21,7 @@ Original model was trained by Jeff Donahue @jeffdonahue.
 
 ## Example
 
-    python classify.py
-
-    [('n02129604', 'tiger', 0.9994967), ('n02123159', 'tiger_cat', 0.00050332409), ('n02111500', 'Great_Pyrenees', 7.3053863e-10), ('n02120079', 'Arctic_fox', 2.0929633e-11), ('n02111889', 'Samoyed', 1.1360767e-11)]
-
-
-or if you want to finetune the model to run in your own dataset use
+if you want to finetune the model to run in your own dataset use
 
     python finetune.py
 
