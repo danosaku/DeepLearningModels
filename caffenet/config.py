@@ -18,7 +18,7 @@ def Get_filename_weights_to_save(model, mb, ne):
 
 
   if pretrain:
-    filename = base+"_"+model+"_mb_"+str(mb)+"_ne_"+str(ne)+"_pretrained_weights("+str(data.day)+"-"+str(data.month)+"-"+str(data.year)+"-"+str(data.hour)+"-"+str(data.minute)+").h5"
+    filename = model+"_mb_"+str(mb)+"_ne_"+str(ne)+"_pretrained_weights("+str(data.day)+"-"+str(data.month)+"-"+str(data.year)+"-"+str(data.hour)+"-"+str(data.minute)+").h5"
   else:
-    filename = base+"_"+model+"_mb_"+str(mb)+"_ne_"+str(ne)+"_without_pretrain_weights("+str(data.day)+"-"+str(data.month)+"-"+str(data.year)+"-"+str(data.hour)+"-"+str(data.minute)+").h5"  
+    filename = model+"_mb_"+str(mb)+"_ne_"+str(ne)+"_without_pretrain_weights("+str(data.day)+"-"+str(data.month)+"-"+str(data.year)+"-"+str(data.hour)+"-"+str(data.minute)+").h5"  
   return filename
