@@ -33,17 +33,12 @@ def CaffeNet(weights=None, input_shape=(3, 227, 227), classes=1000):
     x = Dropout(0.5, name='drop6')(x)
     x = Dense(4096, activation='relu', name='fc7')(x)
     x = Dropout(0.5, name='drop7')(x)
-    xf = Dense(1000, name='fc8')(x)
-    xf = Activation('softmax', name='loss')(xf)
+    xf = Dense(1000, name='fc8a')(x)
+    xf = Activation('softmax', name='loss_t')(xf)
 
     model = Model(inputs, xf, name='caffenet')
 
-    model.load_weights(weights)
-
-    x_newfc = Dense(classes, name='fc_t')(x)
-    x_newfc = Activation('softmax', name='loss_t')(x_newfc)
-
-    model = Model(input=inputs, output=x_newfc)
+    model.load_weights(weights,  by_name=True)
 
     # Learning rate is changed to 0.001
     sgd = SGD(lr=1e-4, decay=1e-6, momentum=0.9, nesterov=True)
