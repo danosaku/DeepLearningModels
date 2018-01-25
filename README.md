@@ -25,4 +25,4 @@ I modified the implementation of https://github.com/yjn870/keras-caffenet to fin
 
 ## TO DO
 
- - Provide an example to show how to use the models in your dataset. I can not post the dataset bacause it is not available to be used yet.
+ - Provide an example to show how to use the models in your dataset instead of use MNIST or CIFAR. I can not post the dataset bacause it is not available to be used yet.
