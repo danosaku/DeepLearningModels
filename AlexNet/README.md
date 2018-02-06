@@ -9,7 +9,7 @@ A blog post accompanying this project can be found [here](https://rahulduggal260
 8. [License](#license)
 
 ## Motivation
-When I first started exploring deep learning (DL) in July 2016, many of the papers I read established their baseline performance using the standard AlexNet model. In part, this could be attributed to the several code examples readily available across all major Deep Learning libraries. Despite its significance, I could not find readily available code examples for training AlexNet in the Keras framework. Through this project, I am sharing my experience of training AlexNet in three very useful scenarios :-
+When I first started exploring deep learning (DL) in July 2017, many of the papers I read established their baseline performance using the standard AlexNet model. In part, this could be attributed to the several code examples readily available across all major Deep Learning libraries. Despite its significance, I could not find readily available code examples for training AlexNet in the Keras framework. Through this project, I am sharing my experience of training AlexNet in three very useful scenarios :-
 
 1. **Training AlexNet end-to-end** - Also known as training from scratch
 2. **Fine-Tuning the pre-trained AlexNet** - extendable to transfer learning
@@ -40,6 +40,15 @@ and for run in GPU:
 THEANO_FLAGS=device=cuda,floatX=float32  python finetune.py 
 ```
 If you want to choose the GPU number 2, replace cuda for cuda2, for instance.
+
+- To classify one single image, just run the following script 
+
+```
+python classify_image.py image/0003_00006.png
+```
+In this script, the first number in the image filename is used as the true label and the second number is used as ID.
+
+
 
 Warning: If you use Imagenet pretrained models, you need subtract the mean of each image channel obained from imagenet dataset, like:
 ```
