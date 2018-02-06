@@ -21,7 +21,7 @@ Make sure you have the following libraries installed.
 1. [Keras](https://keras.io) - A high level neural network library written in python. To install, follow the instructions available [here](https://keras.io/#installation).
 2. [Theano](http://deeplearning.net/software/theano/introduction.html) - A python library to efficiently evaluate/optimize mathematical expressions. To install, follow the instructions available [here](http://deeplearning.net/software/theano/install.html).
 
-**Note :** If you have a GPU in your machine, you might want to configure Keras and Theano to utilize its resources. For myself, running the code on a K20 GPU resulted in a 10-12x speedup.
+**Note :** If you have a GPU in your machine, you might want to configure Keras and Theano to utilize its resources. 
 
 
 ## Usage
