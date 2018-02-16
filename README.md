@@ -8,7 +8,10 @@
  Requirements:
  
  Keras 2.0
+ 
  Theano
+ 
+ Tensorflow
  
  
  ## AlexNet
