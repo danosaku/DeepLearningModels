@@ -20,9 +20,12 @@
 
 I modified the implementation of https://github.com/yjn870/keras-caffenet to finetune in your dataset.
 
+## ZFNet
 
-
+In this implementation, I just modify the AlexNet implementation and load the Imagenet weights from Alexnet to finetune the Cifar 10. Note that I just Cifar 10 as an example and you can modificy to apply in your own dataset. 
 
 ## TO DO
 
  - Provide an example to show how to use the models in your dataset instead of use MNIST or CIFAR. I can not post the dataset bacause it is not available to be used yet.
+ 
+ - Modify the models to be used in different image resolutions. 
