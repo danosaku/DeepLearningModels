@@ -15,7 +15,7 @@ import numpy as np
 from load_cifar10 import load_cifar10_data
 
 if __name__ == '__main__':
-
+    finetune = True
     img_rows, img_cols = 227, 227 # Resolution of inputs
     channel = 3
     batch_size, nb_epoch, num_classes, save_weights = config.Load()
@@ -25,13 +25,14 @@ if __name__ == '__main__':
     model = CaffeNet(weights='caffenet_weights_th.h5', classes=num_classes)
 
     # Start Fine-tuning
-    model.fit(X_train, Y_train,
-              batch_size=batch_size,
-              nb_epoch=nb_epoch,
-              shuffle=True,
-              verbose=1,
-              validation_data=(X_valid, Y_valid),
-              )
+    if finetune:
+       model.fit(X_train, Y_train,
+                batch_size=batch_size,
+                nb_epoch=nb_epoch,
+                shuffle=True,
+                verbose=1,
+                validation_data=(X_valid, Y_valid),
+                )
 
     #model.save('Eggs_weights/caffenet_weights_th.h5')
     if save_weights:
