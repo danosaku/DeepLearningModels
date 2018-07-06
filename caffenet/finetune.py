@@ -12,7 +12,7 @@ import config
 from caffenet import CaffeNet
 from keras.applications.imagenet_utils import decode_predictions
 import numpy as np
-
+from load_cifar10 import load_cifar10_data
 
 if __name__ == '__main__':
 
